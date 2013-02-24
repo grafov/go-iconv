@@ -15,13 +15,12 @@ func main() {
 		return
 	}
 	defer cd.Close()
-	
+
 	r := iconv.NewReader(cd, os.Stdin, 0)
-	
+
 	_, err = io.Copy(os.Stdout, r)
 	if err != nil {
 		fmt.Println("\nio.Copy failed:", err)
 		return
 	}
 }
-

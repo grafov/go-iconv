@@ -15,8 +15,7 @@ func main() {
 	defer cd.Close()
 
 	gbk := cd.ConvString(
-`		你好，世界！你好，世界！你好，世界！你好，世界！
+		`		你好，世界！你好，世界！你好，世界！你好，世界！
 		你好，世界！你好，世界！你好，世界！你好，世界！`)
 	fmt.Println(gbk)
 }
-

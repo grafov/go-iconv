@@ -10,8 +10,8 @@ import "C"
 import (
 	"bytes"
 	"io"
-	"unsafe"
 	"syscall"
+	"unsafe"
 )
 
 var EILSEQ = syscall.Errno(int(C.EILSEQ))

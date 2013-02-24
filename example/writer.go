@@ -14,13 +14,12 @@ func main() {
 	}
 	defer cd.Close()
 
-	autoSync := false	
+	autoSync := false
 	w := iconv.NewWriter(cd, os.Stdout, 0, autoSync)
-	
+
 	fmt.Fprintln(w,
-`		你好，世界！你好，世界！你好，世界！你好，世界！
+		`		你好，世界！你好，世界！你好，世界！你好，世界！
 		你好，世界！你好，世界！你好，世界！你好，世界！`)
 
 	w.Sync() // call it by yourself if autoSync == false
 }
-
