@@ -1,4 +1,4 @@
-go-iconv: libiconv for go
+go-iconv: libiconv for go. Obsoleted. Use https://github.com/qiniu/iconv instead.
 
 # Summary
 
@@ -100,3 +100,6 @@ func main() {
 }
 ```
 
+Status
+------
+[![Is maintained?](http://stillmaintained.com/grafov/go-iconv.png)](http://stillmaintained.com/grafov/go-iconv)
